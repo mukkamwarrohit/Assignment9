@@ -1,7 +1,7 @@
 import { getUser } from './api';
 
 document.addEventListener('DOMContentLoaded', async () => {
-    const urlParams = new URLSearchParams(window.location.search);
+    const urlParams = new URLSearchParams(window.location.search); 
     const userId = urlParams.get('id');
     const userDetails = document.getElementById('user-details') as HTMLElement;
 
@@ -19,3 +19,4 @@ document.addEventListener('DOMContentLoaded', async () => {
         userDetails.innerHTML = '<p>User not found</p>';
     }
 });
+//add default values to falsy values

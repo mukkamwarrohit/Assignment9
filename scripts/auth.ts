@@ -17,7 +17,7 @@ document.getElementById('login-form')?.addEventListener('submit', async (e: Even
     try {
         const response: { token?: string } = await loginUser(username, password);
         
-        if (response.token) {
+        if (response.token) {  //check the output 
             localStorage.setItem('token', response.token);
             alert('Login Successful!');
             window.location.href = 'index.html';
